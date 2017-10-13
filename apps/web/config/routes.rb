@@ -1,2 +1,2 @@
 root to: 'home#index'
-get '/books', to: 'books#index'
+resources :books, only: [:index, :new, :create]
